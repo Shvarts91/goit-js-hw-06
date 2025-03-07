@@ -1,27 +1,27 @@
 class StringBuilder {
-  #strValue = '';
+  #value = '';
 
   constructor(param) {
-    this.#strValue = param;
+    this.#value = param;
   }
 
   getValue() {
-    return this.#strValue;
+    return this.#value;
   }
 
   padStart(str) {
-    this.#strValue = `${str}${this.#strValue}`;
-    console.log(this.#strValue);
+    this.#value = `${str}${this.#value}`;
+    console.log(this.#value);
   }
 
   padEnd(str) {
-    this.#strValue = `${this.#strValue}${str}`;
-    console.log(this.#strValue);
+    this.#value = `${this.#value}${str}`;
+    console.log(this.#value);
   }
 
   padBoth(str) {
-    this.#strValue = `${str}${this.#strValue}${str}`;
-    console.log(this.#strValue);
+    this.#value = `${str}${this.#value}${str}`;
+    console.log(this.#value);
   }
 }
 
